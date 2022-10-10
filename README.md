@@ -4,3 +4,5 @@ The original Flappy Bird game aims to pass the coming obstacles by bouncing the 
 VGA driver. The difference between the project and the original game is about motion features and the playing style of the game. In the original game, the obstacles are coming
 towards the bird, and the bird jumps up to and then falls in to pass the obstacles. In our redesigned version of the game, the bird can go up down right left with 4 input buttons 
 while obstacles are stable. If the user can direct the bird until the endpoint, the game ends and the user wins it.
+
+This project is made for "Digital System Design" course at Bogazici Electrical&Electronics Engineering Department in Spring 2022.
