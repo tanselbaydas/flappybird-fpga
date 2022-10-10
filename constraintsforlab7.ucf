@@ -1,0 +1,28 @@
+net clk loc=V10; # 100 MHz board clock
+net Vsync loc=P7; # VGA-VSYNC
+net Hsync loc=N6; # VGA-HSYNC
+net vgaRed<0> loc=U7; # VGA-RED0
+net vgaRed<1> loc=V7; # VGA-RED1
+net vgaRed<2> loc=N7; # VGA-RED2
+net vgaGreen<0> loc=P8; # VGA-GRN0
+net vgaGreen<1> loc=T6; # VGA-GRN1
+net vgaGreen<2> loc=V6; # VGA-GRN2
+net vgaBlue<0> loc=R7; # VGA-BLU1
+net vgaBlue<1> loc=T7; # VGA-BLU2
+
+## Data bus for both the DEPP and DSTM interfaces uncomment lines 15-22 if using either one
+NET "EppDB<0>"          LOC = "E1"  | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L50N_M3BA2,                     Sch name = U-FD0
+NET "EppDB<1>"          LOC = "F4"  | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L51P_M3A10,                     Sch name = U-FD1
+NET "EppDB<2>"          LOC = "F3"  | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L51N_M3A4,                      Sch name = U-FD2
+NET "EppDB<3>"          LOC = "D2"  | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L52P_M3A8,                      Sch name = U-FD3
+NET "EppDB<4>"          LOC = "D1"  | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L52N_M3A9,                      Sch name = U-FD4
+NET "EppDB<5>"          LOC = "H7"  | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L53P_M3CKE,                     Sch name = U-FD5
+NET "EppDB<6>"          LOC = "G6"  | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L53N_M3A12,                     Sch name = U-FD6
+NET "EppDB<7>"          LOC = "E4"  | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L54P_M3RESET,                   Sch name = U-FD7
+
+## If using the DEPP interface uncomment lines 25-28
+NET "EppWr"       LOC = "F5"  | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L55N_M3A14,                     Sch name = U-FLAGC
+NET "EppAstb"        LOC = "H1"  | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L41N_GCLK26_M3DQ5,              Sch name = U-FLAGA
+NET "EppDstb"        LOC = "K4"  | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L42P_GCLK25_TRDY2_M3UDM,        Sch name = U-FLAGB
+NET "EppWait"        LOC = "C2"  | IOSTANDARD = "LVCMOS33";   #Bank = 3, Pin name = IO_L83P,                           Sch name = U-SLRD
+
