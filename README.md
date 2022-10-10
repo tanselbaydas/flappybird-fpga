@@ -9,5 +9,7 @@ while obstacles are stable. If the user can direct the bird until the endpoint, 
 
 **How to Use**
 
-Create a bit file using "topdesign.vhd" and "constraintsforlab7" and file 
+Create a bit file using "topdesign.vhd" and "constraintsforlab7.ucf" and "Nexys3_master.ucf" files. With this file, you can play the game on a Nexys FPGA board. 
+
+
 This project is made for "Digital System Design" course at Bogazici Electrical&Electronics Engineering Department in Spring 2022.
